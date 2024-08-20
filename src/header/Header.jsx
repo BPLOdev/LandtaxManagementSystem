@@ -13,9 +13,7 @@ const Header = () => {
           <IconButton className="menu" color="inherit">
             <MenuRoundedIcon />
           </IconButton>
-          <h1 className="logo">
-          <img src={logo} alt="Logo" className="logo-img" />
-          Landtax Management System</h1>
+
         </div>
         
 
