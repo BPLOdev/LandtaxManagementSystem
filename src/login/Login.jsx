@@ -70,7 +70,6 @@ const Login = () => {
                     }
                   }}
                 />
-                <h1>Forgot password?</h1>
                 <Button 
                   type="submit" 
                   variant="contained" 
