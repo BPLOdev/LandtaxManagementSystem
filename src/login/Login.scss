@@ -55,16 +55,18 @@
     background-color: #ffffffcb;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Optional: Add a subtle shadow for better visibility
     display: flex;             // Use Flexbox to center content
-    justify-content: center;   // Horizontally center the login container
+    justify-content: top;   // Horizontally center the login container
     align-items: center;       // Vertically center the login container
     flex-direction: column; // Stack children vertically
 
 }
 
-.logo-img {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Maintain aspect ratio */
-    margin-right: 10px; /* Space between text and logo */
+.logo-container {
+    width: 190px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between text and logo */
+    margin-top: 180px;
+
   }
 
 .logoname {

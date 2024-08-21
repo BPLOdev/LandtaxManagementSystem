@@ -22,13 +22,13 @@ const Login = () => {
         <div className='tint'>
         </div>
         <div className="login-container">
-            <div>
-                <img src={logo} alt="Logo" className="logo-img" />
-            </div>
-            <div className='logoname'>
-                <h1>LAND TAX MANAGEMENT SYSTEM</h1>
-            </div>
-            <Box 
+          <div>
+              <img src={logo} alt="Logo" className="logo-container" />
+          </div>
+          <div className='logoname'>
+              <h1>LAND TAX MANAGEMENT SYSTEM</h1>
+          </div>
+          <Box 
               component="form"
               sx={{
                 '& > :not(style)': { 
@@ -66,7 +66,7 @@ const Login = () => {
                   sx={{
                     '& .MuiInputBase-input': {
                       height: '15px', // Adjust height as needed
-                      fontSize: '15px' // Adjust font size if needed
+                      fontSize: '15px', // Adjust font size if needed
                     }
                   }}
                 />
