@@ -11,6 +11,20 @@
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   display: flex;
   align-items: center; /* Center content vertically */
+
+  background-image: url(../assets/image/header-bg.jpg);
+}
+
+.header-tint {
+  width: 100%;   
+  height: 100%;  
+  margin: 0;     
+  background-color: rgb(69, 116, 204);
+  display: flex;
+  opacity: .3;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .container {
@@ -18,8 +32,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto; /* Center align the container */
+  margin-bottom: 0;
   width: 100%; /* Ensure the container takes full width */
-
 }
 
 .headerName {
@@ -50,30 +64,6 @@
   font-size: 16px;
   cursor: pointer;
   margin-left: 15px; /* Ensure space between menu and logo */
-}
-
-
-
-.nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  margin-right: 80px;
-}
-
-.nav li {
-  margin-left: 20px;
-  font-size: 16px; /* Adjust font size to fit the height */
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav a:hover {
-  text-decoration: underline;
 }
 
 /* Add some margin to the body to ensure content doesn't hide behind the fixed header */

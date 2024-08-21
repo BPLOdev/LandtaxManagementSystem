@@ -26,7 +26,7 @@ const Login = () => {
               <img src={logo} alt="Logo" className="logo-container" />
           </div>
           <div className='logoname'>
-              <h1>LAND TAX MANAGEMENT SYSTEM</h1>
+              <h1>REAL PROPERTY TAX MANAGEMENT SYSTEM</h1>
           </div>
           <Box 
               component="form"
@@ -50,6 +50,7 @@ const Login = () => {
                   required
                   sx={{
                     '& .MuiInputBase-input': {
+                      width: '500px',
                       height: '15px', // Adjust height as needed
                       fontSize: '14px' // Adjust font size if needed
                     }
