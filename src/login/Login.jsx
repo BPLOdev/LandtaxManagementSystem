@@ -50,7 +50,6 @@ const Login = () => {
                   required
                   sx={{
                     '& .MuiInputBase-input': {
-                      width: '500px',
                       height: '15px', // Adjust height as needed
                       fontSize: '14px' // Adjust font size if needed
                     }
