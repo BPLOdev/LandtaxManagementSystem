@@ -16,10 +16,16 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+// import InboxIcon from '@mui/icons-material/MoveToInbox';
+// import MailIcon from '@mui/icons-material/Mail';
 import logo from '../assets/image/favicon.svg';
 import backgroundImage from '../assets/image/header-bg.svg';
+
+
+import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
+import ListAltOutlinedIcon from '@mui/icons-material/ListAltOutlined';
+import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
+import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
 
 
 const drawerWidth = 240;
@@ -90,6 +96,15 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
   }),
 );
 
+// Define the icons corresponding to each list item
+const icons = {
+  'Add OHA': <CreateNewFolderOutlinedIcon sx={{ fontSize: 32 }} />,
+  'View Records': <ListAltOutlinedIcon sx={{ fontSize: 32 }} />,
+  'Assessment Roll': <AssessmentOutlinedIcon sx={{ fontSize: 32 }} />,
+  'Subdevide Records': <ArchiveOutlinedIcon sx={{ fontSize: 32 }} />,
+};
+
+
 export default function MiniDrawer() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -150,11 +165,11 @@ export default function MiniDrawer() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Input', 'View Records', 'Assessment Roll', 'Subdevide Records'].map((text, index) => (
+          {['Add OHA', 'View Records', 'Assessment Roll', 'Subdevide Records'].map((text) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
-                  minHeight: 48,
+                  minHeight: 60,
                   justifyContent: open ? 'initial' : 'center',
                   px: 2.5,
                 }}
@@ -166,7 +181,7 @@ export default function MiniDrawer() {
                     justifyContent: 'center',
                   }}
                 >
-                  {index % 4 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {icons[text]} {/* Render the specific icon */}
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
