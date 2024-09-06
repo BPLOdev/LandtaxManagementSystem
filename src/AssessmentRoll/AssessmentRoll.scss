@@ -1,18 +1,12 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding-left: 100px;
+  padding-top: 0px;
   text-align: center;
+  background-color: #f2f2f2;
 }
 
-.card {
-  color: rgb(94, 94, 94);
-}
-
-.read-the-docs {
-  color: #1128f5;
-}
-
-body {
-  background-color: #fcfcfc;
+h1 {
+  margin: 0;
 }
