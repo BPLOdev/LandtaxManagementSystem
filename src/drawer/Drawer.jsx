@@ -95,9 +95,9 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 
 // Define the icons corresponding to each list item
 const icons = {
-  'View Records': <ListAltOutlinedIcon sx={{ fontSize: 32 }} />,
-  'Assessment Roll': <AssessmentOutlinedIcon sx={{ fontSize: 32 }} />,
-  'Subdevide Records': <ArchiveOutlinedIcon sx={{ fontSize: 32 }} />,
+  'ASSESSOR OFFICE': <ListAltOutlinedIcon sx={{ fontSize: 32 }} />,
+  'LANDTAX DIVISION': <AssessmentOutlinedIcon sx={{ fontSize: 32 }} />,
+  'CASH DEVISION': <ArchiveOutlinedIcon sx={{ fontSize: 32 }} />,
 };
 
 
@@ -158,11 +158,11 @@ export default function MiniDrawer() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['View Records', 'Assessment Roll', 'Subdevide Records'].map((text) => (
+          {['ASSESSOR OFFICE', 'LANDTAX DIVISION', 'CASH DEVISION'].map((text) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
-                  minHeight: 60,
+                  minHeight: 75,
                   justifyContent: open ? 'initial' : 'center',
                   px: 2.5,
                 }}
@@ -176,7 +176,12 @@ export default function MiniDrawer() {
                 >
                   {icons[text]} {/* Render the specific icon */}
                 </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary={text}           
+                  sx={{ 
+                    opacity: open ? 1 : 0, 
+                    fontWeight: 'bold',   // Makes the text bold
+                    color: '#54626F',        // Sets the text color to gray
+                  }}  />
               </ListItemButton>
             </ListItem>
           ))}

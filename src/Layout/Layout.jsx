@@ -2,7 +2,6 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import MiniDrawer from '../drawer/Drawer'; // Import MiniDrawer from your Drawer component
-import AssessmentRoll from '../AssessmentRoll/AssessmentRoll'; // Import AssessmentRoll component
 
 const Layout = () => {
   return (
