@@ -95,7 +95,6 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 
 // Define the icons corresponding to each list item
 const icons = {
-  'Add OHA': <CreateNewFolderOutlinedIcon sx={{ fontSize: 32 }} />,
   'View Records': <ListAltOutlinedIcon sx={{ fontSize: 32 }} />,
   'Assessment Roll': <AssessmentOutlinedIcon sx={{ fontSize: 32 }} />,
   'Subdevide Records': <ArchiveOutlinedIcon sx={{ fontSize: 32 }} />,
@@ -159,7 +158,7 @@ export default function MiniDrawer() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Add OHA', 'View Records', 'Assessment Roll', 'Subdevide Records'].map((text) => (
+          {['View Records', 'Assessment Roll', 'Subdevide Records'].map((text) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
@@ -184,9 +183,7 @@ export default function MiniDrawer() {
         </List>
         <Divider />
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-      </Box>
     </Box>
   );
 }

@@ -14,8 +14,9 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate('/assessment-roll');
+    navigate('/assessment-roll');  // or another route that uses Layout
   };
+  
 
   return (
     <div className='background'>

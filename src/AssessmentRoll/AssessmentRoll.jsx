@@ -1,8 +1,6 @@
 import * as React from 'react';
 import './AssessmentRoll.scss';
-import MiniDrawer from '../drawer/Drawer';
 import Typography from '@mui/material/Typography';
-
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -79,9 +77,6 @@ function App() {
 
   return (
     <>
-      <div className='drawer'>
-        <MiniDrawer/>
-      </div>
 
       <Typography paragraph>
       <h1>REAL PROPERTY TAX MANAGEMENT SYSTEM</h1>
