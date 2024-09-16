@@ -89,7 +89,7 @@ function App() {
     </div>
 
       <Paper sx={{ width: '100%'}}>
-      <TableContainer sx={{ maxHeight: 440 }}>
+      <TableContainer sx={{ height: '65vh' }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow>

@@ -4,18 +4,21 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutlined';
+import { height, maxHeight } from '@mui/system';
 
 const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    maxWidth: '100%', // Optional: Set a maximum width to prevent it from becoming too large on wider screens
+    width: '80', // Adjust this value as needed
+    height: '95vh',
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
 
 const icons = {
     'Add Taxdec': <CreateNewFolderOutlinedIcon sx={{ fontSize: 28 }} />,
@@ -43,7 +46,15 @@ export default function BasicModal() {
             TAX DECLARATION
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum eum, voluptatibus libero ipsum harum blanditiis, 
+            deserunt temporibus quasi soluta sequi placeat fugit, voluptatem dolorum nulla reprehenderit tempora quia excepturi.\
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum eum, voluptatibus libero ipsum harum blanditiis, 
+            deserunt temporibus quasi soluta sequi placeat fugit, voluptatem dolorum nulla reprehenderit tempora quia excepturi.\
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum eum, voluptatibus libero ipsum harum blanditiis, 
+            deserunt temporibus quasi soluta sequi placeat fugit, voluptatem dolorum nulla reprehenderit tempora quia excepturi.\
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum eum, voluptatibus libero ipsum harum blanditiis, 
+            deserunt temporibus quasi soluta sequi placeat fugit, voluptatem dolorum nulla reprehenderit tempora quia excepturi.\
           </Typography>
         </Box>
       </Modal>
