@@ -188,7 +188,6 @@ export default function MiniDrawer() {
         </List>
         <Divider />
       </Drawer>
-        <DrawerHeader />
     </Box>
   );
 }
