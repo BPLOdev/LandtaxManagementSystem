@@ -9,7 +9,19 @@
   box-sizing: border-box; /* Ensures padding and borders are included in the element's dimensions */
 }
 
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  .table-title{
+    display: block;
+    text-align: start;
+    h3{
+      margin: 0;
+    }
 
-h1 {
-  margin: 0;
+    p{
+      margin: 0;
+    }
+  }
 }

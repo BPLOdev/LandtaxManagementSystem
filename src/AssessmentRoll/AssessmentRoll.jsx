@@ -9,6 +9,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
+import BasicModal from '../ui/taxdec/taxdec';
 
 const columns = [
   { id: 'name', label: 'Name', minWidth: 170 },
@@ -77,17 +78,15 @@ function App() {
 
   return (
     <>
-
-      <Typography paragraph>
-      <h1>REAL PROPERTY TAX MANAGEMENT SYSTEM</h1>
-      </Typography>
-      <Typography paragraph>
-      Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
-      eget nulla facilisi etiam dignissim diam. Pulvinar elementum integer enim
-      neque volutpat ac tincidunt. Ornare suspendisse sed nisi lacus sed viverra
-      tellus. Purus sit amet volutpat consequat mauris. Elementum eu facilisis
-      sed odio morbi. Euismod lacinia at quis risus sed vulputate odio. Morbi
-      </Typography>
+    <div className="table-header">
+      <div className="table-title">
+        <h3>ASSESSOR OFFICE</h3>
+        <p>Office of the Property Appraiser</p>
+      </div>
+      <div className="filter-addTaxdec">
+        <BasicModal/>
+      </div>
+    </div>
 
       <Paper sx={{ width: '100%'}}>
       <TableContainer sx={{ maxHeight: 440 }}>
